@@ -52,7 +52,7 @@ function! SyntaxCheckers_rust_clippy_GetLocList() dict
 
     let issues = filter(loclist, '!empty(v:val["text"])')
 
-    return issues
+    return reverse(issues)
 
 
 endfunction
